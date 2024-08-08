@@ -1,3 +1,113 @@
 package design.specification2;
 public class Address {
+    private int flatNumber;
+    private String buildingName;
+    private String locality;
+    private String city;
+    private String district;
+    private String state;
+    private String country;
+    private int pincode;
+
+    public Address(){
+
+    }
+
+    public Address(int flatNumber, String buildingName, String locality, String city, String district, String state, String country, int pincode) {
+        this.flatNumber = flatNumber;
+        this.buildingName = buildingName;
+        this.locality = locality;
+        this.city = city;
+        this.district = district;
+        this.state = state;
+        this.country = country;
+        this.pincode = pincode;
+    }
+
+    public int getFlatNumber() {
+        return flatNumber;
+    }
+
+    public void setFlatNumber(int flatNumber) {
+        this.flatNumber = flatNumber;
+    }
+
+    public String getBuildingName() {
+        return buildingName;
+    }
+
+    public void setBuildingName(String buildingName) {
+        this.buildingName = buildingName;
+    }
+
+    public String getLocality() {
+        return locality;
+    }
+
+    public void setLocality(String locality) {
+        this.locality = locality;
+    }
+
+    public String getCity() {
+        return city;
+    }
+
+    public void setCity(String city) {
+        this.city = city;
+    }
+
+    public String getDistrict() {
+        return district;
+    }
+
+    public void setDistrict(String district) {
+        this.district = district;
+    }
+
+    public String getState() {
+        return state;
+    }
+
+    public void setState(String state) {
+        this.state = state;
+    }
+
+    public String getCountry() {
+        return country;
+    }
+
+    public void setCountry(String country) {
+        this.country = country;
+    }
+
+    public int getPincode() {
+        return pincode;
+    }
+
+    public void setPincode(int pincode) {
+        this.pincode = pincode;
+    }
+
+    public String fullAddress()
+    {
+        String response;
+        StringBuilder stringBuilder = new StringBuilder();
+        stringBuilder.append(flatNumber);
+        stringBuilder.append(", ");
+        stringBuilder.append(buildingName);
+        stringBuilder.append(", ");
+        stringBuilder.append(locality);
+        stringBuilder.append(", ");
+        stringBuilder.append(city);
+        stringBuilder.append(", District - ");
+        stringBuilder.append(district);
+        stringBuilder.append(", ");
+        stringBuilder.append(state);
+        stringBuilder.append(", ");
+        stringBuilder.append(country);
+        stringBuilder.append(", pinCode - ");
+        stringBuilder.append(pincode);
+        response = stringBuilder.toString();
+        return response;
+    }
 }
