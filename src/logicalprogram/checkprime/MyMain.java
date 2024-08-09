@@ -1,4 +1,4 @@
-package logicalprogram;
+package logicalprogram.checkprime;
 import java.util.Scanner;
 
 public class MyMain {

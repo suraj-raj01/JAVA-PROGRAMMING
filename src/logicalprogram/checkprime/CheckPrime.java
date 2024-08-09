@@ -1,4 +1,4 @@
-package logicalprogram;
+package logicalprogram.checkprime;
 public class CheckPrime {
     public static boolean isPrime(long value)
     {
