@@ -7,7 +7,7 @@ public class Address {
     private String district;
     private String state;
     private String country;
-    private int pincode;
+    private int pinCode;
 
     public Address(){
 
@@ -21,7 +21,7 @@ public class Address {
         this.district = district;
         this.state = state;
         this.country = country;
-        this.pincode = pincode;
+        this.pinCode = pincode;
     }
 
     public int getFlatNumber() {
@@ -81,11 +81,11 @@ public class Address {
     }
 
     public int getPincode() {
-        return pincode;
+        return pinCode;
     }
 
-    public void setPincode(int pincode) {
-        this.pincode = pincode;
+    public void setPincode(int pinCode) {
+        this.pinCode = pinCode;
     }
 
     public String fullAddress()
@@ -106,7 +106,7 @@ public class Address {
         stringBuilder.append(", ");
         stringBuilder.append(country);
         stringBuilder.append(", pinCode - ");
-        stringBuilder.append(pincode);
+        stringBuilder.append(pinCode);
         response = stringBuilder.toString();
         return response;
     }

@@ -9,6 +9,10 @@ public class Employee {
     private Address presentAddress;
     private Address communicationAddress;
 
+    public Employee(){
+
+    }
+
     public Employee(String name, String email, String panCard, String mobile, Address permanentAddress, Address presentAddress, Address communicationAddress) {
         this.name = name;
         this.email = email;

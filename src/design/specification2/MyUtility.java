@@ -3,10 +3,10 @@ public class MyUtility {
     public static boolean isValidAddress(Address address)
     {
         boolean response = false;
-        int pincode = address.getPincode();
-        int flatnumber = address.getFlatNumber();
-        if(flatnumber>0){
-            if(pincode>99999 && pincode<999999)
+        int pinCode = address.getPincode();
+        int flatNumber = address.getFlatNumber();
+        if(flatNumber>0){
+            if(pinCode <=999999 && pinCode >100000)
             {
                 response = true;
             }

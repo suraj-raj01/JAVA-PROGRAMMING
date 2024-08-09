@@ -31,9 +31,8 @@ public class MyMain {
         permanent.setCountry(country);
         permanent.setPincode(pinCode);
         System.out.println(permanent.fullAddress());
-        MyUtility myUtility = new MyUtility();
 
-        if(myUtility.isValidAddress(permanent)){
+        if(MyUtility.isValidAddress(permanent)){
             System.out.println("Valid Address");
         }
     }
