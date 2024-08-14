@@ -3,11 +3,8 @@ package logicalprogram.arrays;
 import java.util.Scanner;
 
 // Check wether the two given arrays are same.
-public class Main {
+public class IsSameArray {
     public static void main(String[] args) {
-//        int[] arr1 = {1,2,3,4,5};
-//        int[] arr2 = {1,2,3,4,5};
-
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter the array size: ");
         int size = scanner.nextInt();
@@ -24,18 +21,24 @@ public class Main {
             arr2[i]=scanner.nextInt();
         }
         int count=0;
-        boolean flag = false;
+        boolean flag = true;
         if(arr1.length==arr2.length)
         {
             for(int i=0; i<arr1.length; i++){
-                if(arr1[i]==arr2[i]){
-                    flag = true;
+                if(arr1[i]!=arr2[i]){
+                    flag = false;
                 }
+            }
+            if(flag){
+                System.out.println("Arrays are same!!");
+            }
+            else{
+                System.out.println("Arrays are not same!!!");
             }
         }
         else{
-            System.out.println("not possible");
+            System.out.println("Both arrays has different size!!");
         }
-        System.out.println(flag);
+
     }
 }

@@ -1,4 +1,6 @@
 package logicalprogram.arrays;
+import java.util.Arrays;
+
 // Write a program to copy first array at the end of second array, by creating third array, both the arrays can have different size.
 public class CopyArray {
     public static void main(String[] args) {
@@ -11,8 +13,8 @@ public class CopyArray {
         for (int i = 0; i < arr1.length; i++) {
             arr3[arr2.length+i]+=arr1[i];
         }
-        for(int i=0; i<arr3.length; i++){
-            System.out.print(arr3[i]+" ");
-        }
+        System.out.println(Arrays.toString(arr1));
+        System.out.println(Arrays.toString(arr2));
+        System.out.println(Arrays.toString(arr3));
     }
 }
