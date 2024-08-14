@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class PrintDigit {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter the string: ");
+        System.out.println("Enter the string: ");   
         String data = scanner.nextLine();
         for(int i=0; i<data.length(); i++)
         {
