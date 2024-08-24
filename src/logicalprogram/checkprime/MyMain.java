@@ -6,6 +6,6 @@ public class MyMain {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter the number: ");
         long number = scanner.nextLong();
-        CheckPrime checkPrime = new CheckPrime();
+        System.out.println("CheckPrime = " + CheckPrime.isPrime(number));
     }
 }

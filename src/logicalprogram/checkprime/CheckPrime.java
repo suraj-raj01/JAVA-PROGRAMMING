@@ -2,20 +2,18 @@ package logicalprogram.checkprime;
 public class CheckPrime {
     public static boolean isPrime(long value)
     {
-        boolean response = false;
+        boolean response = true;
         int counter = 0;
-        int val = 0;
-        for(int i=2; i<=value; i++)
+        for(int i=2; i<value; i++)
         {
-            if(value%i==0)
-            {
-                counter++;
-                val = i;
+            if (value % i == 0) {
+                counter = 1;
+                break;
             }
         }
-        if(counter==2)
+        if(counter==1)
         {
-        response = true;
+        response = false;
         }
         return  response;
     }
