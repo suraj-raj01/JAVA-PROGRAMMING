@@ -20,7 +20,7 @@ public class MyMain {
         System.out.println(car1.equals(car));
         car1.setColor("RED");
         car1.setMake("Mahindra");
-        car1.setMake("Scorpio");
+        car1.setModal("Scorpio");
         car1.setYear(2005);
         car1.setColor("Black");
         System.out.println(car1.displayInfo());
