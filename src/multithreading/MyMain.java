@@ -18,8 +18,10 @@ public class MyMain extends Thread{
         System.out.println("threadMyMain = " + threadMyMain);
         System.out.println("threadMyMain = " + threadMyMain);
         threadMyMain.start();
+        threadMyMain.setPriority(MAX_PRIORITY);
         MyRunnable multiThreading = new MyRunnable();
         Thread ThreadMultiThreading = new Thread(multiThreading);
         ThreadMultiThreading.start();
+        ThreadMultiThreading.setPriority(MIN_PRIORITY);
     }
 }
