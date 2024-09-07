@@ -78,4 +78,21 @@ public class Employee {
     public void setCommunicationAddress(Address communicationAddress) {
         this.communicationAddress = communicationAddress;
     }
+    public String employeeDetails() {
+        String response;
+        StringBuilder stringBuilder = new StringBuilder();
+        stringBuilder.append("Name : ");
+        stringBuilder.append(name);
+        stringBuilder.append(", Email : ");
+        stringBuilder.append(email);
+        stringBuilder.append(", panCard : ");
+        stringBuilder.append(panCard);
+        stringBuilder.append(", Mobile : ");
+        stringBuilder.append(mobile);
+        stringBuilder.append(", Address : ");
+        Address address = new Address();
+        stringBuilder.append(address.fullAddress());
+        response = stringBuilder.toString();
+        return response;
+    }
 }

@@ -35,5 +35,20 @@ public class MyMain {
         if(MyUtility.isValidAddress(permanent)){
             System.out.println("Valid Address");
         }
+        scanner.nextLine();
+        System.out.println("Enter your name : ");
+        String name = scanner.nextLine();
+        System.out.println("Enter your email : ");
+        String email = scanner.nextLine();
+        System.out.println("Enter your panCard : ");
+        String panCard = scanner.nextLine();
+        System.out.println("Enter your Mobile : ");
+        String mobile = scanner.nextLine();
+        Employee employee = new Employee();
+        employee.setName(name);
+        employee.setEmail(email);
+        employee.setPanCard(panCard);
+        employee.setMobile(mobile);
+        System.out.println(employee.employeeDetails());
     }
 }
