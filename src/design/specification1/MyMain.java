@@ -15,7 +15,6 @@ Print the number of vowels in the full name of the user, using the countVowel me
 
 */
 package design.specification1;
-
 import java.util.Scanner;
 
 public class MyMain {

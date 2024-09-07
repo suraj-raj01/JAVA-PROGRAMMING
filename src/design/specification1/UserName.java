@@ -23,7 +23,6 @@ public class UserName {
     public String fullName(){
         String response = null;
         response = firstName+" "+lastName;
-        response.toString();
         return  response;
     }
 }
